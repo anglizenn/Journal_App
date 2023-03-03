@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/buttonWrite"
+        android:icon="@drawable/write_foreground"
+        android:title="Write" />
+
+    <item
+        android:id="@+id/buttonCalendar"
+        android:title="Calendar"
+        android:icon="@drawable/calendar_foreground"/>
+
+    <item
+        android:id="@+id/buttonSettings"
+        android:title="Settings"
+        android:icon="@drawable/settings_foreground"/>
+
+</menu>

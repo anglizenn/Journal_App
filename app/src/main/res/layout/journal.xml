@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/buttonClose"
+        android:layout_width="64dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/close_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/textDate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 October 2022"
+        android:textSize="35sp"
+        android:textColor="#1F8774"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/moodView"
+        app:layout_constraintBottom_toTopOf="@id/boundaryLine"
+        app:layout_constraintVertical_bias="0.5"/>
+
+    <View
+        android:id="@+id/boundaryLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@id/journalContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/moodView" />
+
+    <TextView
+        android:id="@+id/journalContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Today, my summer holidays have begun. I plan to visit the aquarium and zoo with my family, it's been so long since we've spent time together.
+\n\nMaybe I'll also try to learn a new language. But I haven't decided yet which I would like to learn.
+\n\nI'll also be going to Iceland with my family next month and I'm so excited. I forgot what it's like to be able to relax after the crazy amount of assignments I had to get done."
+        android:textSize="18sp"
+        android:gravity="start|top"
+        app:layout_constraintLeft_toLeftOf="@id/textDate"
+        app:layout_constraintTop_toBottomOf="@id/boundaryLine" />
+
+    <ImageView
+        android:id="@+id/moodView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/mood5_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toEndOf="@id/textDate"
+        app:layout_constraintTop_toBottomOf="@id/buttonClose" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

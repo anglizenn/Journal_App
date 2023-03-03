@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/notif_border">
+
+    <ImageButton
+        android:id="@+id/buttonClose"
+        android:layout_width="64dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/close_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleNotif"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="Select the mood that best describes your day"
+        android:textSize="20sp"
+        android:textColor="#1F8774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonClose" />
+
+    <ImageButton
+        android:id="@+id/mood1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@id/mood3Button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/mood4Button"
+        app:layout_constraintTop_toBottomOf="@id/mood5Button"
+        app:srcCompat="@drawable/mood1_foreground" />
+
+    <ImageButton
+        android:id="@+id/mood2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@id/mood4Button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/mood5Button"
+        app:layout_constraintTop_toBottomOf="@id/mood5Button"
+        app:srcCompat="@drawable/mood2_foreground" />
+
+    <ImageButton
+        android:id="@+id/mood3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@id/buttonClose"
+        app:layout_constraintStart_toEndOf="@id/mood4Button"
+        app:layout_constraintTop_toTopOf="@id/mood5Button"
+        app:layout_constraintBottom_toBottomOf="@id/mood5Button"
+        app:srcCompat="@drawable/mood3_foreground" />
+
+    <ImageButton
+        android:id="@+id/mood4Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@id/mood3Button"
+        app:layout_constraintStart_toEndOf="@id/mood5Button"
+        app:layout_constraintTop_toTopOf="@id/mood5Button"
+        app:layout_constraintBottom_toBottomOf="@id/mood5Button"
+        app:srcCompat="@drawable/mood4_foreground" />
+
+    <ImageButton
+        android:id="@+id/mood5Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleNotif"
+        app:srcCompat="@drawable/mood5_foreground" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

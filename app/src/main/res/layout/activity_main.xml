@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="3dp"
+        app:backgroundTint="#11D7B2"
+        app:itemIconSize="50dp"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/navigation" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textStats"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/textStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Statistics"
+        android:textColor="#1F8774"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calendarView"/>
+
+    <TextView
+        android:id="@+id/numberOfJournal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Total Number of Journal Entries"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textStats"
+        app:layout_constraintStart_toStartOf="@id/textStats"/>
+
+    <TextView
+        android:id="@+id/valueJournal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/numberOfJournal"
+        app:layout_constraintTop_toTopOf="@id/numberOfJournal"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/moodView1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/mood1_foreground"
+        app:layout_constraintStart_toEndOf="@id/moodView2"
+        app:layout_constraintTop_toTopOf="@id/moodView2" />
+
+    <ImageView
+        android:id="@+id/moodView2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/mood2_foreground"
+        app:layout_constraintStart_toEndOf="@id/moodView3"
+        app:layout_constraintTop_toTopOf="@id/moodView3"/>
+
+    <ImageView
+        android:id="@+id/moodView3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/mood3_foreground"
+        app:layout_constraintStart_toEndOf="@id/moodView4"
+        app:layout_constraintTop_toTopOf="@id/moodView4"/>
+
+    <ImageView
+        android:id="@+id/moodView4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/mood4_foreground"
+        app:layout_constraintStart_toEndOf="@id/moodView5"
+        app:layout_constraintTop_toTopOf="@id/moodView5"/>
+
+    <ImageView
+        android:id="@+id/moodView5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mood5_foreground"
+        app:layout_constraintTop_toBottomOf="@id/numberOfJournal"
+        app:layout_constraintStart_toStartOf="@id/numberOfJournal"/>
+
+    <TextView
+        android:id="@+id/valueMood1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/moodView1"
+        app:layout_constraintTop_toBottomOf="@id/moodView1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="@id/moodView1"/>
+
+    <TextView
+        android:id="@+id/valueMood2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/moodView2"
+        app:layout_constraintTop_toBottomOf="@id/moodView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="@id/moodView2"/>
+
+    <TextView
+        android:id="@+id/valueMood3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/moodView3"
+        app:layout_constraintTop_toBottomOf="@id/moodView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="@id/moodView3"/>
+
+    <TextView
+        android:id="@+id/valueMood4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/moodView4"
+        app:layout_constraintTop_toBottomOf="@id/moodView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="@id/moodView4"/>
+
+    <TextView
+        android:id="@+id/valueMood5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/moodView5"
+        app:layout_constraintTop_toBottomOf="@id/moodView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="@id/moodView5"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
