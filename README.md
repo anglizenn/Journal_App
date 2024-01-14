@@ -1,5 +1,5 @@
 # Journaling App
-A journaling application to encourage and provide an outlet for users to write down their thoughts and assist them in tracking their daily moods. Journaling is a good way for users to reflect on their day and break down complex thoughts into more manageable pieces. Demo: https://youtube.com/shorts/fkz76tCMTLM?si=jwIieS6Gi2U6-GS5
+A journaling application to encourage and provide an outlet for users to write down their thoughts and assist them in tracking their daily moods. Journaling is a good way for users to reflect on their day and break down complex thoughts into more manageable pieces. Demo: https://www.youtube.com/shorts/fkz76tCMTLM
 
 ## Features: 
 <li>Submit a journal entry daily.</li>
